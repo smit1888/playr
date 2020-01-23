@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.algonquin.smit1888.playr" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>smit1888-player</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="smit1888@algonquinlive.com" href="http://cordova.io">
+        smit beladiya
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon density="xxxhdpi" src="/res/icons/android/Artboard.png" />
+        <splash density="land-mdpi" src="/res/screen/android/Artboard11.png" />
+        <splash density="land-hdpi" src="/res/screen/android/Artboard12.png" />
+        <splash density="land-xhdpi" src="/res/screen/android/Artboard13.png" />
+        <splash density="land-xxhdpi" src="/res/screen/android/Artboard14.png" />
+        <splash density="land-xxxhdpi" src="/res/screen/android/Artboard15.png" />
+
+
+        <splash density="port-mdpi" src="/res/screen/android/Artboard1.png" />
+        <splash density="port-hdpi" src="/res/screen/android/Artboard2.png" />
+        <splash density="port-xhdpi" src="/res/screen/android/Artboard3.png" />
+        <splash density="port-xxhdpi" src="/res/screen/android/Artboard4.png" />
+        <splash density="port-xxxhdpi" src="/res/screen/android/Artboard5.png" />
+
+         <preference name="AutoHideSplashScreen" value="true" />
+        <preference name="SplashScreenDelay" value="5000" />  
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>
