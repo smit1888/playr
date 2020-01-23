@@ -123,12 +123,15 @@ const app = {
         
         document.getElementById("first").classList.remove("active");
         document.querySelector(".page2").classList.add("active");
+        document.getElementById("first").classList.add("active2");
+        document.getElementsByClassName("page2").classList.remove("active2");
         document.querySelector(".play").classList.remove("active");
         document.querySelector(".pause").classList.add("active");
     },
     goBackward:function(){
         document.querySelector(".page2").classList.remove("active");
         document.querySelector(".page1").classList.add("active");
+        document.getElementById("first").classList.remove("active2");
         document.querySelector(".play").classList.remove("active");
         document.querySelector(".pause").classList.add("active");
     },
@@ -226,6 +229,7 @@ const app = {
                 
                 let page1 = document.querySelector(".page1")
                 page1.classList.remove("active");
+                page1.classList.add("active2");
                 document.querySelector(".page2").classList.add("active");
                 app.goNext();
                 if(app.media!=null){
