@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.algonquin.smit1888.playr" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>smit1888-player</name>
+    <name>smit1888-playr</name>
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
