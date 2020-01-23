@@ -1,4 +1,7 @@
+
+
 .play , .pause{
+
     height:60px;
     width:60px;
    position: relative;
@@ -32,7 +35,8 @@
     position: absolute;
     overflow: hidden;
     opacity: 0;
-    transform: translateX(-100vw);   
+    transform: translateX(-110vw);
+      
 }
 
 .page.active{
@@ -49,13 +53,19 @@ body{
     background-color: hsl(220, 57%, 78%);
 }
 .page1 ,.page2{
-   height:90%;
-    width:90%;
+   
+   height:100vh;
+    width:90vw;
     
+    
+}
+.player{
+    margin-left:7vw;
 }
 
 .page2{
     display: grid;
+    justify-self: right;
     grid-template-rows: 1fr 5fr 2fr 1fr;
     
 }
@@ -65,8 +75,9 @@ body{
     display: grid;
     grid-template-columns:1fr 5fr 1fr ;
     justify-items: center;
-    
-    /* margin-top: 100px; */
+    margin-left:5px;
+    margin-right: 5px;
+    margin-top: 20px;
 
 }
 .progress{
@@ -82,9 +93,9 @@ body{
 }
 .poster{
     float: left;
-    height:50px;
-    width:50px;
-    border-radius:50%;
+    height:60px;
+    width:60px;
+    
     margin-right: 1rem;
 
     
@@ -92,10 +103,11 @@ body{
 .songList{
     border-top: 1px solid;
     
-    color: #5b461b;
+    color: hsl(40, 73%, 9%);
     font-size: 24px;
     font-weight: 700; 
     padding-top: 5px;
+    
 }
 p span{
     font-weight: 500;
@@ -132,23 +144,26 @@ p span{
 }
 .visual{
     width:50vw;
-
     padding-right: 20vw;
     padding-left:20vw ;
+    
+}
+.visual.act{
     animation: rotate 5s  linear infinite;
 
 }
+
 .name,.art{
     text-align: center;
 }
 .name{
-    color: #5b461b;
+    color: hsl(40, 73%, 9%);
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 0;
 }
 .art{
-    color:#5b461b;
+    color:hsl(40, 73%, 9%);
     font-size:1rem;
     opacity:0.5;
     font-weight: 500;
@@ -159,6 +174,5 @@ p span{
     25%{transform: rotate(90deg);}
     50%{transform: rotate(180deg);}
     75%{transform: rotate(270deg);}
-    /* 80%{transform: rotate(240deg);} */
     100%{transform: rotate(360deg);}
 }

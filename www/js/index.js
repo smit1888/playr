@@ -127,7 +127,7 @@ const app = {
         document.querySelector(".pause").classList.add("active");
     },
     goBackward:function(){
-        document.querySelector(".page2").classList.remove("active")
+        document.querySelector(".page2").classList.remove("active");
         document.querySelector(".page1").classList.add("active");
         document.querySelector(".play").classList.remove("active");
         document.querySelector(".pause").classList.add("active");
@@ -182,6 +182,7 @@ const app = {
             document.querySelector(".art").textContent=src1.artist;
             document.querySelector(".play").classList.remove("active");
         document.querySelector(".pause").classList.add("active");
+        document.querySelector(".visual").classList.add("act");
             app.media.release();
             app.media=null;
             app.media = new Media(src, app.get ,app.notGet ,app.statusChange);
@@ -202,6 +203,7 @@ const app = {
                 document.querySelector(".art").textContent=src1.artist;
                 document.querySelector(".play").classList.remove("active");
         document.querySelector(".pause").classList.add("active");
+        document.querySelector(".visual").classList.add("act");
                 app.media.release();
                 app.media=null;
                 app.media = new Media(src, app.get ,app.notGet ,app.statusChange);
@@ -209,11 +211,13 @@ const app = {
             },
     resume:function(){
         app.media.play();
+        document.querySelector(".visual").classList.add("act");
         document.querySelector(".play").classList.remove("active");
         document.querySelector(".pause").classList.add("active");
             },
     pause:function(){
         app.media.pause();
+        document.querySelector(".visual").classList.remove("act");
         document.querySelector(".pause").classList.remove("active");
         document.querySelector(".play").classList.add("active");
             },
@@ -239,6 +243,7 @@ const app = {
                 let src = songobj.source;
                 document.querySelector(".name").textContent=songobj.song;
                 document.querySelector(".art").textContent=songobj.artist;
+                document.querySelector(".visual").classList.add("act");
                 app.media = new Media(src, app.get ,app.notGet ,app.statusChange);
                 app.media.play();
             
